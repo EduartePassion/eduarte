@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página inicial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/bootstrap-4.5.3-dist/css/estilo.css" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap-grid.css" type="text/css">
+
+    </head>
+    <body>
+        <div class="container"> 
+            <header class="row clearfix">
+                <img src="bootstrap/img/gif1.png" alt="logomarca"/>
+            </header>
+        
+            <nav class="row clearfix caixa">
+                <ul class="nav nav-pills menu-estilo"> 
+                    <li> 
+                        <a href="index.html">Início</a> 
+                    </li> 
+                    <li> 
+                        <a href="listas.html">Listas</a> 
+                    </li> 
+                    <li> 
+                        <a href="produtos.html">Produto</a> 
+                    </li> 
+                </ul>
+            </nav>
+        
+            <div class="row clearfix caixa">
+                <section class="col-md-6">
+                    <form method="POST" class="form-estilo">
+                        <hr>
+                        <h2 class="título">
+                            <strong>Efetue o login</strong>
+                        </h2>
+                        <hr> 
+                        <p><input type="email" name="email" class="form-control" placeholder="Digite seu email" required/></p>
+                        <p><input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required/></p>
+                        <label class="checkbox">
+                            <input type="radio" name="lembrete" />Lembrar senha
+                        </label>
+                        <p><button name="login" type="submit" class="btn btn-lg btn-info btn-block">Entrar</button></p>
+                    </form>
+                    
+                    <form method="POST" class="form-estilo">
+                        <hr>
+                        <h2 class="título"> 
+                            <strong>Cadastre-se agora</strong>
+                        </h2>
+                        <hr>
+                        <p><input type="email"  name="email" class="form-control" placeholder="Digite seu email" required/></p>
+                        <p><input type="password" name="senha" class="form-control" placeholder="Digite sua senha" required/></p>
+                        <p><button name="login" type="submit" class="btn btn-lg btn-info btn-block">Cadastrar</button></p>
+                    </form>
+                </section>
+        
+                
+            </div>
+            <section class="row clearfix caixa">
+                <hr>
+                <h2 class="título">
+                        <strong>Como criar sua própria lista?</strong>
+                </h2>
+                <hr>
+                
+                
+                <div class="col-md-6">
+                    <div> 
+                        <img class="img-responsive" alt="tutorial_1"
+                             src="bootstrap/img/index/tutorial_1.jpg">
+                    </div>
+                    
+                    <div class="col-md-6">
+                        
+                        <p>
+                            Texto explicativo
+                        </p>
+                        
+                    </div>
+                </div>
+                <hr>
+            </section>
+       </div> 
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Página inicial</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/bootstrap-4.5.3-dist/css/estilo.css/" rel="stylesheet">
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap-reboot.min.css" type="text/css"/>
+        <link rel="stylesheet" href="bootstrap/bootstrap-4.5.3-dist/css/bootstrap-grid.css" type="text/css">
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="row clearfix">
+                 <img src="bootstrap/img/gif1.png" alt="logomarca"/>
+            </header>
+        
+            <nav class="row clearfix caixa">
+                <ul class="nav nav-pills menu-estilo"> 
+                    
+                    <li> 
+                        <a href="index.php">Início</a> 
+                    </li> 
+                    <li> 
+                        <a href="index.html">Listas</a> 
+                    </li> 
+                    <li> 
+                        <a href="index.php">Produto</a> 
+                    </li> 
+                </ul>
+            </nav>
+        </div>  
+        
+    <div class="row clearfix caixa">
+        <hr>
+        <h2 class="título"> 
+            <strong>Meu Perfil</strong>
+        </h2>
+        
+    <section class="col-md-6">  
+        <h4 class="título">Imagem de perfil</h4>
+        <img class="img-responsive center-block"
+             src="bootstrap/img/usuario/padrao.jpg" alt="">
+        <hr />
+        <form class="form-estilo" method="post"
+               enctype="multipart/form-data">
+            <p><input class="form-control"
+                      type="file" name="arquivo"/></p>
+            <p><button name="enviarFoto"
+                       class="btn btn-lg btn-info btn-block"
+                       type="submit">Enviar</button></p>
+            
+        </form>
+    </section>
+    
+  
+    <section class="col-md-6">
+        <h4 class="título">Dados de perfil</h4>
+        <p>Nome: Usuário</p>
+        <p>Email: usuario@gmail.com</p>
+        <p><a href="#">Meu link</a></p>
+        <p>Data de criação: 12/12/2012</p>
+        <br />
+        
+        <div class="bg-warning">
+            <h3>Minha Lista</h3>
+            
+            <p>Nome: Lista de aniversário</p>
+            <form method="post">
+                <button name="excluirLista" class="btn btn-danger" type="submit">
+6                    <span class="glyphicon glyphicon-remove">Excluir</span>
+                </button>
+            </form>
+        </div>
+        
+    </section>
+
+
+</div>
+            
+<div class="row clearfix">
+    <hr>
+<h2> 
+    <strong>Serviços para sua lista</strong>
+</h2>
+<hr>
+<section class="col-md-6" style="background-color: #fff;">
+       <h3 class="título">Itens da minha lista</h3>
+       <table class="table table-striped">
+           <thead>
+               <tr>
+                   <th>Código</th>
+                   <th>Descrição</th>
+                   <th>Excluir</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>6</td>
+                   <td>Computador</td>
+                   <td>
+                       <form method="post">
+                           <input type="hidden"
+                                  name="codProduto" value="6">
+                           <button name="excluirItem"
+                                   class="btn btn-danger"
+                                   type="submit">
+                               <span class="glyphicon glyphicon-remove"></span>    
+                               Excluir
+                           </button>
+                       </form>
+                   
+                   </td>
+               </tr>
+           </tbody>
+       </table>
+   </section>
+
+   <section class="col-md-6 caixa">
+       <h3 class="título">Indicar para um amigo</h3>
+       <form class="form-estilo" method="post">
+           <input type="hidden" name="link"/>
+           <p>
+                <input type="text" name="nome"
+                class="form-control" placeholder="Nome" required>
+           </p>
+           <p>
+                  <input type="email" name="email" 
+                  class="form-control" placeholder="Email"
+                  required />
+           </p>
+           <p>
+                <button class="btn btn-lg btn-info btn-block"
+                    type="submit">Indicar</button>
+           </p>
+       </form>
+   </section>
+</div>
+    </body>
+</html>
